@@ -1,1 +1,72 @@
 @import "tailwindcss";
+
+/* THEME: 80s Retro */
+.theme-retro {
+  --theme-bg: #1a0033;
+  --theme-fg: #39ff14;
+  background: linear-gradient(135deg, #ff00cc 0%, #333399 100%) !important;
+  color: #39ff14 !important;
+  font-family: 'Orbitron', 'Inter', sans-serif !important;
+  transition: background 0.5s, color 0.5s;
+}
+.theme-retro a { color: #00fff7 !important; }
+.theme-retro h1, .theme-retro h2, .theme-retro h3 { text-shadow: 0 0 8px #ff00cc, 0 0 4px #39ff14; }
+
+/* THEME: Terminal Classic */
+.theme-terminal {
+  --theme-bg: #101010;
+  --theme-fg: #00ff00;
+  background: #101010 !important;
+  color: #00ff00 !important;
+  font-family: 'Fira Mono', 'Consolas', monospace !important;
+  transition: background 0.5s, color 0.5s;
+  background-image: repeating-linear-gradient(180deg, #101010 0px, #101010 2px, #111 3px, #101010 4px);
+}
+.theme-terminal a { color: #00ffea !important; }
+.theme-terminal h1, .theme-terminal h2, .theme-terminal h3 { text-shadow: 0 0 4px #00ff00; }
+
+/* THEME: Hand-Sketched */
+.theme-sketch {
+  --theme-bg: #fffbe7;
+  --theme-fg: #222;
+  background: #fffbe7 url('data:image/svg+xml;utf8,<svg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"><rect fill="none" stroke="%23bdb76b" stroke-width="2" width="100%25" height="100%25"/></svg>') !important;
+  color: #222 !important;
+  font-family: 'Comic Sans MS', 'Caveat', cursive !important;
+  transition: background 0.5s, color 0.5s;
+}
+.theme-sketch a { color: #e67e22 !important; }
+.theme-sketch h1, .theme-sketch h2, .theme-sketch h3 { text-shadow: 1px 1px 0 #bdb76b; }
+
+/* THEME: Steampunk */
+.theme-steampunk {
+  --theme-bg: #2c1a09;
+  --theme-fg: #e0c080;
+  background: linear-gradient(135deg, #2c1a09 0%, #6e4b1f 100%) !important;
+  color: #e0c080 !important;
+  font-family: 'IM Fell English', 'Georgia', serif !important;
+  transition: background 0.5s, color 0.5s;
+}
+.theme-steampunk a { color: #b87333 !important; }
+.theme-steampunk h1, .theme-steampunk h2, .theme-steampunk h3 { text-shadow: 0 0 6px #b87333; }
+
+/* THEME: Fantasy Realm */
+.theme-fantasy {
+  --theme-bg: #23213a;
+  --theme-fg: #b6e3ff;
+  background: linear-gradient(135deg, #23213a 0%, #4e2a84 100%) !important;
+  color: #b6e3ff !important;
+  font-family: 'UnifrakturCook', 'Cinzel Decorative', cursive !important;
+  transition: background 0.5s, color 0.5s;
+}
+.theme-fantasy a { color: #7fffd4 !important; }
+.theme-fantasy h1, .theme-fantasy h2, .theme-fantasy h3 { text-shadow: 0 0 8px #7fffd4, 0 0 4px #b6e3ff; }
+
+/* Default theme fallback */
+.theme-default {
+  --theme-bg: #181a20;
+  --theme-fg: #f3f3f3;
+  background: #181a20 !important;
+  color: #f3f3f3 !important;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif !important;
+  transition: background 0.5s, color 0.5s;
+}
